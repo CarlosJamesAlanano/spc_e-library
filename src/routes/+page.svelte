@@ -12,7 +12,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo and Title -->
             <div class="flex items-center">
-                <img src="logo.png" alt="SPC Library Logo" class="w-12 h-12 sm:w-16 sm:h-16" />
+                <img src="#" alt="SPC Library Logo" class="w-12 h-12 sm:w-16 sm:h-16" />
                 <h1 class="ml-4 text-2xl sm:text-3xl font-bold text-gray-800">SPC Public Library</h1>
             </div>
 
@@ -21,17 +21,17 @@
                 class="block sm:hidden text-gray-600 focus:outline-none"
                 on:click={toggleMenu}
             >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
 
             <!-- Navigation Menu -->
             <nav class={`flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-gray-600 mt-4 sm:mt-0 ${isMenuOpen ? 'flex' : 'hidden'} sm:flex`}>
-                <a href="/" class="hover:text-blue-600 transition">Home</a>
-                <a href="/browse" class="hover:text-blue-600 transition">Browse</a>
-                <a href="/contact" class="hover:text-blue-600 transition">Contact</a>
-                <a href="/about" class="hover:text-blue-600 transition">About Us</a>
+                <a href="src/routes/+page.svelte" class="hover:text-blue-600 transition">Home</a>
+                <a href="src/routes/browse.svelte" class="hover:text-blue-600 transition">Browse</a>
+                <a href="src/routes/contact.svelte" class="hover:text-blue-600 transition">Contact</a>
+                <a href="src/routes/about.svelte" class="hover:text-blue-600 transition">About Us</a>
             </nav>
         </div>
     </header>
@@ -44,7 +44,7 @@
             <p class="text-md sm:text-lg text-gray-600 mb-6">
                 Discover a world of knowledge with our digital library, featuring a vast collection of research papers.
             </p>
-            <a href="/browse" class="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold hover:bg-blue-700 transition">
+            <a href="src/routes/browse.svelte" class="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold hover:bg-blue-700 transition">
                 Explore Now
             </a>
         </section>
@@ -61,7 +61,7 @@
 
             <!-- Featured Research Papers -->
             <div>
-                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Featured Research Papers</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Recently Added</h2>
                 <ul class="space-y-4">
                     <li class="bg-white rounded-md shadow-lg p-4">
                         <h3 class="text-lg sm:text-xl font-bold text-gray-800">Research Title 1</h3>
@@ -82,14 +82,14 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Featured Collections</h2>
                 <div class="grid grid-cols-1 gap-4">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="collection-1.jpg" alt="Collection 1" class="w-full h-40 object-cover">
+                        <img src="#" alt="Collection 1" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="text-lg sm:text-xl font-bold text-gray-800">Collection of Topic 1</h3>
                             <p class="text-gray-600">Brief description of the collection.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="collection-2.jpg" alt="Collection 2" class="w-full h-40 object-cover">
+                        <img src="#" alt="Collection 2" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="text-lg sm:text-xl font-bold text-gray-800">Collection of Topic 2</h3>
                             <p class="text-gray-600">Brief description of the collection.</p>
@@ -112,8 +112,8 @@
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto text-center">
             <div class="mb-4">
-                <a href="#" class="hover:text-gray-300 mx-2">Home</a> |
-                <a href="#" class="hover:text-gray-300 mx-2">Privacy Policy</a> |
+                <a href="src/routes/+page.svelte" class="hover:text-gray-300 mx-2">Home</a> 
+                <a href="#" class="hover:text-gray-300 mx-2">Privacy Policy</a> 
                 <a href="#" class="hover:text-gray-300 mx-2">Terms of Service</a>
             </div>
             <p class="text-sm">&copy; 2024 San Pablo City Public Library. All rights reserved.</p>
