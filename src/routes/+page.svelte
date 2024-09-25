@@ -12,12 +12,13 @@
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo and Title -->
             <div class="flex items-center">
-                <img src="#" alt="SPC Library Logo" class="w-12 h-12 sm:w-16 sm:h-16" />
+                <img src="./logo.png" alt="SPC Library Logo" class="w-12 h-12 sm:w-16 sm:h-16" />
                 <h1 class="ml-4 text-2xl sm:text-3xl font-bold text-gray-800">SPC Public Library</h1>
             </div>
 
             <!-- Hamburger Menu Button (Mobile Only) -->
             <button
+                aria-label="Toggle Menu"
                 class="block sm:hidden text-gray-600 focus:outline-none"
                 on:click={toggleMenu}
             >
@@ -52,15 +53,15 @@
         <!-- About & Featured Research Papers Section -->
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 mb-12">
             <!-- About Section -->
-            <div>
+            <article>
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">About the Library</h2>
                 <p class="text-gray-600">
                     SPC Public Library offers a wide range of resources for both students and professionals. With a focus on fostering learning and research, our digital collections span across various disciplines.
                 </p>
-            </div>
+            </article>
 
             <!-- Featured Research Papers -->
-            <div>
+            <article>
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Recently Added</h2>
                 <ul class="space-y-4">
                     <li class="bg-white rounded-md shadow-lg p-4">
@@ -72,13 +73,13 @@
                         <p class="text-gray-600">Short description of the study goes here.</p>
                     </li>
                 </ul>
-            </div>
+            </article>
         </section>
 
         <!-- Featured Collections & Announcements Section -->
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12">
             <!-- Featured Collections -->
-            <div class="col-span-1">
+            <article class="col-span-1">
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Featured Collections</h2>
                 <div class="grid grid-cols-1 gap-4">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -96,15 +97,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Announcements -->
-            <div class="lg:col-span-2">
+            <article class="lg:col-span-2">
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Announcements</h2>
                 <div class="bg-white rounded-lg shadow-lg p-6">
                     <p class="text-gray-600">Stay updated with the latest news and events happening at SPC Public Library. Check back regularly for important announcements and updates.</p>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
 
